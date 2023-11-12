@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocketseat | Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-conteudo">
+            <h1>AVALIE A SUA MENTORIA</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="img/balão.svg" alt="Balão de avaliação">
+
+            <div class="box-informaçoes">
+                <h2>INFORMAÇÕES PESSOAIS</h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form action="POST">
+            <div class="fieldset">
+                <!-- INFORMAÇÕES PESSOAIS -->
+                <div class="box-pessoal">
+                    <div class="box-child">
+                        <div class="box-name">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div class="box-sobrenome">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome">
+                        </div>
+                    </div>
+                    <div class="box-email">
+                        <div class="box-email">
+                            <label for="email">Email<span>(digite um email válido)</span></label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                </div>
+                <!-- INFORMAÇÕES DO MENTOR -->
+                <div class="box-mentor">
+                    <h2>INFORMAÇÕES DO MENTOR</h2>
+                    <hr>
+                    <div class="select-mentor">
+                        <label for="mentor">Selecione quem foi seu mentor</label>
+                        <select name="mentor">
+                            <option value="mentor-1">José Tarquino</option>
+                            <option value="mentor-1">Rafael Reis</option>
+                            <option value="mentor-1">Paulo Sergio</option>
+                        </select>
+                    </div>
+                    <div class="box-feedback">
+                        <label for="feedback">Feedback sobre o mentor</label>
+                        <textarea name="feedback"></textarea>
+                    </div>
+                </div>
+                <div class="box-checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                </div>
+                <div class="box-agendando">
+                    <h2>AGENDANDO PRÓXIMA MENTORIA</h2>
+                    <hr>
+                    <div class="agendando-filho">
+                        <div class="box-data">
+                            <label for="data">Data <span>(DD/MM/ AAAA)</span></label> <input type="date" id="data">
+                        </div>
+                        <div class="box-das">
+
+                            <label for="das">Das </label>
+                            <input type="time" id="das">
+                        </div>
+                        <div class="box-ate">
+                            <label for="até">Até </label>
+                            <input type="time" id="até">
+                        </div>
+                    </div>
+ 
+                </div> 
+               <!-- Submit -->
+                <input type="submit" value="SALVAR" class="input-submit">
+            </div>
+
+        </form>
+
+    </main>
+
+
+
+
+</body>
+
+</html>

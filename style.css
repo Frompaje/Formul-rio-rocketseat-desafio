@@ -1,0 +1,319 @@
+/* RESET WEB */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body input{
+    padding-left: 15px;
+}
+
+/* HEADER */
+header {
+    width: auto;
+    height: 465px;
+    background-color: #293241;
+    color: white;
+    text-align: center;
+
+
+
+}
+
+.header-conteudo {
+    padding-top: 107px;
+
+}
+
+.header-conteudo h1 {
+    font-size: 36px;
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.header-conteudo p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 4px;
+    margin-bottom: 27px;
+
+}
+
+.box-informaçoes {
+    width: 750px;
+    height: 133px;
+    background-color: #F67669;
+    color: white;
+    margin: 32px auto 0;
+    border-radius: 8px;
+
+}
+
+.box-informaçoes h2 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    position: relative;
+    top: 35%;
+}
+
+/* MAIN */
+main {
+    width: auto;
+    background-color: #bfd7e4;
+    height: 1465px;
+}
+
+/* formulário */
+form {
+    width: 751px;
+    height: 1075px;
+    background: white;
+    margin: 0 auto;
+}
+
+.fieldset {
+
+    width: 622px;
+    height: 864px;
+    margin: 0 auto;
+
+}
+
+.box-pessoal {
+    width: 622px;
+    height: 190px;
+    padding-top: 31px;
+
+}
+
+.box-child {
+    display: flex;
+    gap: 22px;
+
+}
+
+/* fomulário= box nome/box sobrenome */
+
+.box-name label,
+.box-sobrenome label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.box-name input,
+.box-sobrenome input {
+    display: block;
+    width: 300px;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    margin-bottom: 15px;
+}
+
+/* formulário= box email */
+.box-email label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+
+.box-email input {
+    width: 622px;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+}
+
+.box-email span {
+    margin-left: 9px;
+    color: #6e6d6e;
+}
+
+/* INFORMAÇÕES DO MENTOR */
+.box-mentor {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 31px;
+    width: 622px;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-mentor h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    padding-top: 31px;
+
+}
+.box-mentor hr{
+border: 1px solid #E6E6F0;
+width: 622px;
+margin-bottom: 31px;
+}
+
+
+.select-mentor{
+display: flex;
+flex-direction: column;
+
+}
+.select-mentor label{
+    width: 234px;
+    
+    margin-bottom: 8px;
+}
+.select-mentor select{
+    width: 300px;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    appearance: none;
+    
+   background-image: url(img/Vector\ \(1\).svg);
+   background-repeat: no-repeat;
+   background-position: right 24px top 50%;
+  margin-bottom: 31px;
+  padding-left: 15px;
+}
+.box-feedback{
+    display: flex;
+    flex-direction: column;
+
+}
+.box-feedback textarea{
+    width: 608px;
+    height: 167px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.box-feedback label{
+    margin-bottom: 8px;
+  
+}
+
+.box-checkbox{
+    display: flex;
+    gap: 8px;
+   align-items: center;
+   
+}
+.box-checkbox{
+    position: relative;
+    margin-bottom: 32px;
+}
+.box-checkbox input{
+    /* display: none; */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+opacity: 0;
+}
+.box-checkbox label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.box-checkbox label::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E6E6F0;
+    display: block;
+    border-radius: 8px;
+
+}
+
+.box-checkbox input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2705_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2705_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.box-checkbox input:focus + label::before{
+ outline: 2px solid black;
+}
+/* AGENDANDO PRÓXIMA MENTORIA */
+.box-agendando{
+    width: 622px;
+    height: 162px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+  
+}
+.box-agendando h2{
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.box-agendando hr{
+    width: 622px;
+    border: 1px solid #E6E6F0;
+    margin-bottom: 41px;
+  
+}
+.agendando-filho{
+    text-align: start;
+    display: flex;
+    gap: 10px;
+}
+.agendando-filho label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+.agendando-filho span{
+    color: #6e6d6e;
+}
+
+.box-data{
+    margin-bottom: 9px;   
+
+}
+.box-data input{
+    width: 300px;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    margin-top: 9px;
+    gap: 32px;
+    
+   
+}
+.box-das input ,.box-ate input{
+    width: 140px;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    margin-top: 9px;
+  
+}
+
+/* SUBMIT */
+
+
+.input-submit{
+    font-family: 'Staatliches', sans-serif;
+    font-size: 20px;
+ margin: 0 auto;
+ margin-top: 64px;
+ width: 622px;
+ height: 51px;
+ color: white;
+ background-color: #F67669;
+ border: none;
+ border-radius: 8px;
+}
